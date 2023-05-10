@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCoreMVC", "WebCoreMVC\WebCoreMVC.csproj", "{BB194ABD-84A2-439D-8DBD-A1EA3E978D1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebCoreMVC", "WebCoreMVC\WebCoreMVC.csproj", "{BB194ABD-84A2-439D-8DBD-A1EA3E978D1D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebRazor", "WebRazor\WebRazor.csproj", "{83600F90-F0A5-41BA-BD79-A13561B819D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{BB194ABD-84A2-439D-8DBD-A1EA3E978D1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB194ABD-84A2-439D-8DBD-A1EA3E978D1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB194ABD-84A2-439D-8DBD-A1EA3E978D1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83600F90-F0A5-41BA-BD79-A13561B819D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83600F90-F0A5-41BA-BD79-A13561B819D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83600F90-F0A5-41BA-BD79-A13561B819D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83600F90-F0A5-41BA-BD79-A13561B819D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
