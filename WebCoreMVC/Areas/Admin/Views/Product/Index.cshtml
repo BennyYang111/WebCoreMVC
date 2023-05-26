@@ -19,24 +19,14 @@
             </div>
         </div>
 
-        <table class="table table-bordered table-striped">
+        @*<table class="table table-bordered table-striped">
             <thead>
                 <tr>
-                    <th>
-                        Title
-                    </th>
-                    <th>
-                        ISBN
-                    </th>
-                    <th>
-                        Price
-                    </th>
-                    <th>
-                        Author
-                    </th>
-                    <th>
-                        Category
-                    </th>
+                    <th>Title</th>
+                    <th>ISBN</th>
+                    <th>Price</th>
+                    <th>Author</th>
+                    <th>Category</th>
                     <th></th>
                 </tr>
             </thead>
@@ -56,10 +46,13 @@
                             @obj.Author
                         </td>
                         <td>
-
+                            @obj.Category.Name
                         </td>
                         <td>
                             <div class="w-75 btn-group" role="group">
+                                <a asp-controller="Product" asp-action="Detail" asp-route-id="@obj.Id" class="btn btn-danger mx-2">
+                                    <i class="bg-info bi-trash-square"></i> View
+                                </a>
                                 <a asp-controller="Product" asp-action="Upsert" asp-route-id="@obj.Id" class="btn bg-dark btn-primary mx-2">
                                     <i class="bg-info bi-pencil-square"></i> Edit
                                 </a>
@@ -71,7 +64,23 @@
                     </tr>
                 }
             </tbody>
+        </table>*@
+
+        <table id="tblData" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>ISBN</th>
+                    <th>Price</th>
+                    <th>Author</th>
+                    <th>Category</th>
+                    <th></th>
+                </tr>
+            </thead>
         </table>
     </div>
 </div>
 
+@section Scripts{
+    <script src="~/js/product.js"></script>
+}
