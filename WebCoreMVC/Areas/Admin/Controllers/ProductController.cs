@@ -196,7 +196,7 @@ namespace WebCoreMVC.Areas.Admin.Controllers
             return Json(new { data = objProductList });
         }
 
-        //[HttpDelete]
+        [HttpDelete]
         public IActionResult Delete(int? id)
         {
             var productToBeDeleted = _unitOfWork.Product.Get(x => x.Id == id);
