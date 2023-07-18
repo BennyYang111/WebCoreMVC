@@ -347,9 +347,6 @@ namespace Web.DataAccess.Migrations
                     b.Property<int>("OrderHeaderId")
                         .HasColumnType("int");
 
-                    b.Property<int>("OrderId")
-                        .HasColumnType("int");
-
                     b.Property<double>("Price")
                         .HasColumnType("float");
 
@@ -417,7 +414,7 @@ namespace Web.DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("ShoppingDate")
+                    b.Property<DateTime>("ShippingDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("State")

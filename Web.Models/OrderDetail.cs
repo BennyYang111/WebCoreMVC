@@ -13,7 +13,7 @@ namespace Web.Models
     {
         public int Id { get; set; }
         [Required]
-        public int OrderId { get; set; }
+        public int OrderHeaderId { get; set; }
         [ForeignKey("OrderHeaderId")]
         [ValidateNever]
         public OrderHeader OrderHeader { get; set; }
